@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PsySearch</title>
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <a href="#" class="logo">
+        <img src="images/psycircle-icon.svg" alt="PsySearch Logo" class="logo-icon"> <!-- Иконка -->
+        <span class="site-name">PsySearch</span>
+      </a>
+      <button class="burger" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="#" class="nav__link active">Главная</a></li>
+          <li><a href="#" class="nav__link">Запрос</a></li>
+          <li><a href="#" class="nav__link">Специалисты</a></li>
+          <li><a href="#" class="nav__link">Отзывы</a></li>
+          <li class="profile-menu">
+            <a href="#" class="nav__link nav__profile" id="profileToggle">
+              <img src="images/profile-icon.svg" alt="Профиль" class="profile-icon"/>
+            </a>
+            <div class="dropdown" id="profileDropdown">
+              <a href="#">Войти / Зарегистрироваться</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <!-- Блок 1: Введение -->
+    <section class="hero">
+      <h1>Найдите своего психолога</h1>
+      <p>Мы поможем подобрать специалиста под ваш запрос</p>
+      <a href="#search" class="btn-primary">Начать подбор</a>
+    </section>
+  
+    <!-- Блок 2: Поиск -->
+    <section class="search" id="search">
+      <h2>Подберите специалиста</h2>
+      <form class="search-form">
+        <input type="text" placeholder="Что вас беспокоит?" required>
+        <select required>
+          <option disabled selected>Выберите формат</option>
+          <option>Онлайн</option>
+          <option>Очный прием</option>
+        </select>
+        <button type="submit" class="btn-primary">Найти</button>
+      </form>
+    </section>
+  
+    <!-- Блок 3: Преимущества -->
+    <section class="features">
+      <h2>Почему PsySearch?</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <span class="icon">🔍</span>
+          <p>Умный подбор под запрос</p>
+        </div>
+        <div class="feature-card">
+          <span class="icon">💬</span>
+          <p>Онлайн и оффлайн консультации</p>
+        </div>
+        <div class="feature-card">
+          <span class="icon">📄</span>
+          <p>Только сертифицированные специалисты</p>
+        </div>
+        <div class="feature-card">
+          <span class="icon">🧠</span>
+          <p>Безопасное пространство для работы с собой</p>
+        </div>
+      </div>
+    </section>
+  
+      <section class="video-carousel">
+      <div class="carousel-heading">
+        <h2><span>▶</span> Советы от наших специалистов</h2>
+      </div>
+      <div class="carousel-container">
+        <button class="carousel-btn prev">&#10094;</button>
+    
+        <div class="carousel-track" id="carouselTrack">
+          <div class="video-card">
+            <div class="video-thumbnail">
+              <video src="videos/advice1.mp4" muted></video>
+              <div class="play-icon">▶</div>
+            </div>
+            <p>Как справиться с тревожностью</p>
+          </div>
+          <div class="video-card">
+            <div class="video-thumbnail">
+              <video src="videos/advice2.mp4" muted></video>
+              <div class="play-icon">▶</div>
+            </div>
+            <p>Что делать при выгорании</p>
+          </div>
+          <div class="video-card">
+            <div class="video-thumbnail">
+              <video src="videos/advice3.mp4" muted></video>
+              <div class="play-icon">▶</div>
+            </div>
+            <p>Панические атаки: пошагово</p>
+          </div>
+          <div class="video-card">
+            <div class="video-thumbnail">
+              <video src="videos/advice4.mp4" muted></video>
+              <div class="play-icon">▶</div>
+            </div>
+            <p>Как выбрать «своего» психолога</p>
+          </div>
+          <div class="video-card">
+            <div class="video-thumbnail">
+              <video src="videos/advice5.mp4" muted></video>
+              <div class="play-icon">▶</div>
+            </div>
+            <p>Первая сессия: как не бояться</p>
+          </div>
+          <!-- Дополнительные заглушки -->
+<div class="video-card">
+  <div class="video-thumbnail">
+    <video src="videos/advice6.mp4" muted></video>
+    <div class="play-icon">▶</div>
+  </div>
+  <p>Стыд и вина: как различать</p>
+</div>
+
+<div class="video-card">
+  <div class="video-thumbnail">
+    <video src="videos/advice7.mp4" muted></video>
+    <div class="play-icon">▶</div>
+  </div>
+  <p>Как не замыкаться в себе</p>
+</div>
+
+<div class="video-card">
+  <div class="video-thumbnail">
+    <video src="videos/advice8.mp4" muted></video>
+    <div class="play-icon">▶</div>
+  </div>
+  <p>Поддержка подростков в семье</p>
+</div>
+        </div>
+    
+        <button class="carousel-btn next">&#10095;</button>
+      </div>
+    </section>
+    <section class="faq">
+      <div class="section-heading">
+        <h2>Часто задаваемые вопросы</h2>
+      </div>
+      <div class="faq-container">
+        <div class="faq-item">
+          <button class="faq-question">Как выбрать подходящего психолога?</button>
+          <div class="faq-answer">
+            <p>Выберите психолога, который специализируется на вашей проблеме. Вы также можете почитать отзывы и ознакомиться с опытом работы специалиста.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Как записаться на приём?</button>
+          <div class="faq-answer">
+            <p>Вы можете записаться на приём через наш сайт, выбрав удобное время и дату, либо связавшись с психологом напрямую.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Что делать, если я не нашёл подходящего специалиста?</button>
+          <div class="faq-answer">
+            <p>Если вы не нашли подходящего психолога, не переживайте — наш сервис продолжает обновляться, и вы сможете найти нового специалиста в будущем.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Блок 4: Отзывы -->
+    <section class="reviews">
+      <h2>Отзывы клиентов</h2>
+      <div class="review-card">
+        <p>"Очень понравилось, как быстро подобрали специалиста! Уже после первого сеанса почувствовала улучшение."</p>
+        <span>— Анастасия</span>
+      </div>
+      <div class="review-card">
+        <p>"Благодаря PsySearch нашел психолога, который действительно помогает. Удобный интерфейс и всё понятно."</p>
+        <span>— Алексей</span>
+      </div>
+    </section>
+    <div class="btn-center">
+      <button class="btn-appointment">Записаться</button>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-container">
+        <!-- Логотип и название -->
+        <div class="footer-brand">
+          <img src="images/psycircle-icon.svg" alt="PsySearch Logo" class="footer-logo" />
+          <h4><span class="footer-title">PsySearch</span></h4>
+        </div>
+      <div class="footer-column">
+        <h4>Важное</h4>
+        <ul>
+          <li><a href="#">Политика конфиденциальности</a></li>
+          <li><a href="#">Обработка персональных данных</a></li>
+          <li><a href="#">Пользовательское соглашение</a></li>
+          <li><a href="#">Реквизиты</a></li>
+          <li><a href="#">Порядок обработки</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>О нас</h4>
+        <ul>
+          <li><a href="#">О сервисе</a></li>
+          <li><a href="#">Вопросы и ответы</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Блог</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
